@@ -98,8 +98,7 @@ class Work extends React.Component {
                             <h4 style={{ fontWeight: "bolder" }}>-Web developer Intern</h4>
                             <p>(Dec 2020 - Mar 2021)</p>
                             <p style={{ fontSize: "1rem" }}>Developed a fully functional payment portal for the product ATTENDiO (an AI based attendance system). Worked with React.JS, Cloud firestore and API's such as RazorPay</p>
-                            <button class="button2" style={{background:"black"}}><a href = "https://attendio-pricing-67c45.web.app/" target = "_blank" style={{textDecoration:"none", color:"white"}}>Check out my work !</a></button>{"   "}
-                            <button class="button2" ><a href = "https://drive.google.com/file/d/1jzD9AKNl2NOjYcGh4WUQGzTfUMcYFQGA/view?usp=sharing" target = "_blank" style={{textDecoration:"none", color:"white"}}>Certification</a></button>
+                            <button class="button2" style={{background:"black"}}><a href = "https://attendio-pricing-67c45.web.app/" target = "_blank" style={{textDecoration:"none", color:"white"}}>Check out my work !</a></button>
                             </div>
                         </div>
                     </div>
@@ -183,7 +182,11 @@ class Work extends React.Component {
                     
                     <div style={{paddingTop:"5%"}}></div>
                 </div>
-            </div></StyleRoot>
+            </div>
+            <div style={{bottom:"0px",textAlign:"center", fontSize:"1.5rem", background:"black", height:"3rem", position:"relative", width:"100%"}}>
+        Created by Siddharth using <img src="https://img.icons8.com/color/48/000000/react-native.png"/>
+      </div>
+            </StyleRoot>
         }
         if(this.state.status === "home")
         {

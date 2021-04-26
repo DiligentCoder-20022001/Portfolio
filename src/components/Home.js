@@ -102,8 +102,7 @@ class Home extends React.Component{
                                 <button class = "button1"><a href = "https://www.linkedin.com/in/siddharth-s-chandran-1b96311b9/" target="_blank"><img src="https://img.icons8.com/fluent/48/000000/linkedin.png"/></a></button>
                                 <button class = "button1"><a href = "mailto:siddharthschandran45@gmail.com" target="_blank"><img src="https://img.icons8.com/color/48/000000/gmail.png"/></a></button>
                                 <div style={{paddingTop:"2%"}}>
-                                <button class = "button2" style={{background:"black"}}><a href = "https://drive.google.com/file/d/13ByaY3Y3A5lmA2E9cuRzCMXFeXFQVeSf/view?usp=sharing" target = "_blank" style={{textDecoration:"none", color:"white"}}>Check out my Resume !</a></button>{"  "
-                                }<button class = "button2" ><a href = "https://serene-springs-20141.herokuapp.com/" target = "_blank" style={{textDecoration:"none", color:"white"}}>Stay in the loop !</a></button>
+                                <button class = "button2" style={{background:"black"}} ><a href = "https://serene-springs-20141.herokuapp.com/" target = "_blank" style={{textDecoration:"none", color:"white"}}>Stay in the loop !</a></button>
                                 </div>
                                 </div>
                                 </ScrollAnimation>
@@ -191,6 +190,10 @@ class Home extends React.Component{
                     </div>
                     <div style={{paddingTop:"5%"}}></div>
                 </div>
+                
+                <div style={{bottom:"0px",textAlign:"center", fontSize:"1.5rem", background:"black", height:"3rem", position:"relative", width:"100%"}}>
+        Created by Siddharth using <img src="https://img.icons8.com/color/48/000000/react-native.png"/>
+      </div>
             </div>
             </StyleRoot>
         }

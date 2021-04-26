@@ -124,9 +124,12 @@ class Contact extends React.Component
                 </main></div>
                         </div>
                     </div>
-                    
+                    <div style={{paddingTop:"5%"}}></div>
                        
                 </div>
+                <div style={{bottom:"0px",textAlign:"center", fontSize:"1.5rem", background:"black", height:"3rem", position:"relative", width:"100%"}}>
+        Created by Siddharth using <img src="https://img.icons8.com/color/48/000000/react-native.png"/>
+      </div>
             </div></StyleRoot>
         }
         if(this.state.status === "work")

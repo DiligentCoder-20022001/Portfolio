@@ -1,5 +1,7 @@
 {
   "projects": {
-    "default": "diligentcoderfolio"
+    "default": "diligentcoderfolio",
+    "hosting": "diligentcoderfolio",
+    "diligentcoderfolio": "diligentcoderfolio"
   }
 }

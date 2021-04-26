@@ -8,6 +8,7 @@ function App() {
     <div className="App">
       {/*<h1>OM GAN GANAPATHAYE NAMO NAMAH</h1>*/}
       <Home/>
+      
     </div>
   );
 }
