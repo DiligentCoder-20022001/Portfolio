@@ -11,7 +11,8 @@ import { fadeIn } from 'react-animations';
 import { slideInRight } from 'react-animations';
 import Content from './content.svg';
 import Radium, {StyleRoot} from 'radium';
- 
+import "animate.css/animate.min.css";
+import ScrollAnimation from 'react-animate-on-scroll';
 const styles = {
   slideInLeft: {
     animation: 'x 2s',
@@ -92,7 +93,8 @@ class Home extends React.Component{
                     <div class = "row">
                         <div class = "col-lg-6 col-md-12">
                             <div style={{paddingTop:"25%", textAlign:"center"}}>
-                                <div style={styles.slideInLeft}>
+                            <ScrollAnimation animateIn="slideInLeft">
+                                <div>
                                 <h1 class = "title" >Siddharth.S.Chandran</h1>
                                 <h4>Software developer under development !</h4>
                                 <button class = "button1"><a href = "https://github.com/DiligentCoder-20022001" target="_blank"><img src="https://img.icons8.com/fluent/48/000000/github.png"/></a></button>
@@ -104,11 +106,12 @@ class Home extends React.Component{
                                 }<button class = "button2" ><a href = "https://serene-springs-20141.herokuapp.com/" target = "_blank" style={{textDecoration:"none", color:"white"}}>Stay in the loop !</a></button>
                                 </div>
                                 </div>
+                                </ScrollAnimation>
                             </div>
                             
                         </div>
                         <div class = "col-lg-6 col-md-12" style={{textAlign:"center"}}>
-                            <div style={styles2.slideInRight}><img src = {Hello} class = "img1"/></div>
+                        <ScrollAnimation animateIn="slideInRight"><div><img src = {Hello} class = "img1"/></div></ScrollAnimation>
                         </div>
                     </div>
                 </div>
@@ -119,7 +122,7 @@ class Home extends React.Component{
                     <div style={{paddingTop:"5%"}}></div>
                     <div class = "row">
                     <div class = "col-lg-6 col-md-12">
-                            <div style={{textAlign:"center"}}><div style={styles.slideInLeft}>
+                    <ScrollAnimation animateIn="slideInLeft"><div style={{textAlign:"center"}}><div style={styles.slideInLeft}>
                                 <h1 class = "title1" style={{fontSize:"3rem"}}>Full stack development</h1>
                                 <div>
                                     <img src="https://img.icons8.com/color/48/000000/mongodb.png"/>
@@ -134,22 +137,18 @@ class Home extends React.Component{
                                     <li>Experience in backend using Firebase, Mongo, MySQL</li>
                                     <li>Experience in building mobile apps using React native</li>
                                 </ul></div>
-                            </div>
+                            </div></ScrollAnimation>
                         </div>
                         <div class = "col-lg-6 col-md-12" style={{textAlign:"center"}}>
-                            <div style={styles1.fadeIn}><img src = {Web} class = "img2"/></div>
+                        <ScrollAnimation animateIn="fadeIn"><div style={styles1.fadeIn}><img src = {Web} class = "img2"/></div></ScrollAnimation>
                         </div>
                         
                     </div>
                     <div style={{paddingTop:"5%"}}></div>
                     <div class = "row">
                     <div class = "col-lg-6 col-md-12" style={{textAlign:"center "}}>
-                            <div style={styles1.fadeIn}>
-                            <img src = {Problem} class = "img2"/>
-                            </div>
-                        </div>
-                        <div class = "col-lg-6 col-md-12" style={{textAlign:"center"}}>
-                        <div style={styles2.slideInRight}>
+                            
+                    <ScrollAnimation animateIn="slideInLeft"><div >
                             <h1 class = "title1" style={{fontSize:"3rem"}}>Problem Solving</h1>
                             <img src="https://img.icons8.com/color/48/000000/c-plus-plus-logo.png"/>
                             <img src="https://img.icons8.com/color/48/000000/GeeksforGeeks.png"/>
@@ -162,14 +161,19 @@ class Home extends React.Component{
                                     <li>Highest rating of 3 stars on <a href="https://www.codechef.com/users/sid_20022001" target = "_blank" style={{color:"#66D7D1"}}>CodeChef</a></li>
                                     <li>Solved more than 100 questions on <a href="https://leetcode.com/Siddharth_S_Chandran/" target = "_blank" style={{color:"#66D7D1"}}>LeetCode</a></li>
                                     <li>Participated in more than 15 coding competitions</li>
-                                </ul></div>
+                                </ul></div></ScrollAnimation>
+                        </div>
+                        <div class = "col-lg-6 col-md-12" style={{textAlign:"center"}}>
+                        <div style={styles1.fadeIn}>
+                        <ScrollAnimation animateIn="fadeIn"><img src = {Problem} class = "img2"/></ScrollAnimation>
+                            </div> 
                         </div>
                         
                     </div>
                     <div style={{paddingTop:"5%"}}></div>
                     <div class = "row">
                     <div class = "col-lg-6 col-md-12">
-                            <div style={{textAlign:"center"}}><div style={styles.slideInLeft}>
+                            <div style={{textAlign:"center"}}><ScrollAnimation animateIn="slideInLeft"><div style={styles.slideInLeft}>
                                 <h1 class = "title1" style={{fontSize:"3rem"}}>Content writing</h1>
                                 <div>
                                 </div>
@@ -177,11 +181,11 @@ class Home extends React.Component{
                                     <li>I love to write blogs on various topics such as space-time facts, technical stuff, etc</li>
                                     <li>Check out my blogs <a a href="https://siddharthschandran44.medium.com/" target = "_blank" style={{color:"#66D7D1"}}>(Click)</a></li>
                                     
-                                </ul></div>
+                                </ul></div></ScrollAnimation>
                             </div>
                         </div>
                         <div class = "col-lg-6 col-md-12" style={{textAlign:"center"}}>
-                            <div style={styles1.fadeIn}><img src = {Content} class = "img2"/></div>
+                        <div><ScrollAnimation animateIn="fadeIn"><img src = {Content} class = "img2"/></ScrollAnimation></div>
                         </div>
                         
                     </div>

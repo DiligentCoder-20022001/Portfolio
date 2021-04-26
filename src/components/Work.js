@@ -8,7 +8,8 @@ import { slideInLeft } from 'react-animations';
 import { fadeIn } from 'react-animations';
 import { slideInRight } from 'react-animations';
 import Radium, {StyleRoot} from 'radium';
- 
+import "animate.css/animate.min.css";
+import ScrollAnimation from 'react-animate-on-scroll';
 const styles = {
   slideInLeft: {
     animation: 'x 2s',
@@ -108,7 +109,7 @@ class Work extends React.Component {
                     </div>
                     <div class="row">
                         <div class="col-lg-6 col-md-12" style={styles1.fadeIn}>
-                            <div>
+                        <ScrollAnimation animateIn="fadeIn"><div>
                                 <div style={{ paddingTop: "2%" }}></div>
                                 <div class="card1 card-1">
                                     <h3 style={{ color: "black" }}>NotesKeeper</h3>
@@ -121,10 +122,10 @@ class Work extends React.Component {
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            </div></ScrollAnimation>
                         </div>
                         <div class="col-lg-6 col-md-12" style={styles1.fadeIn}>
-                            <div>
+                        <ScrollAnimation animateIn="fadeIn"><div>
                                 <div style={{ paddingTop: "2%" }}></div>
                                 <div class="card1 card-1">
                                     <h3 style={{ color: "black" }}>AlcoholicsAnonymous</h3>
@@ -137,13 +138,13 @@ class Work extends React.Component {
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            </div></ScrollAnimation>
                         </div>
                     </div>
                     <div style={{paddingTop:"2%"}}></div>
                     <div class="row">
                         <div class="col-lg-6 col-md-12" style={styles1.fadeIn}>
-                            <div>
+                        <ScrollAnimation animateIn="fadeIn"><div>
                                 <div style={{ paddingTop: "2%" }}></div>
                                 <div class="card1 card-1">
                                     <h3 style={{ color: "black" }}>GeekBuzz</h3>
@@ -156,10 +157,10 @@ class Work extends React.Component {
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            </div></ScrollAnimation>
                         </div>
                         <div class="col-lg-6 col-md-12" style={styles1.fadeIn}>
-                            <div>
+                        <ScrollAnimation animateIn="fadeIn"><div>
                                 <div style={{ paddingTop: "2%" }}></div>
                                 <div class="card1 card-1">
                                     <h3 style={{ color: "black" }}>Sorting Algo Visualizer</h3>
@@ -172,11 +173,11 @@ class Work extends React.Component {
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            </div></ScrollAnimation>
                         </div>
                         <div style={{paddingTop:"5%"}}></div>
                         <div style={{textAlign:"center"}}>
-                        <button class = "button2"><a href = "https://github.com/DiligentCoder-20022001" target = "_blank" style={{textDecoration:"none", color:"white"}}>View more !</a></button>
+                        <button class = "button2" style={{background:"black"}}><a href = "https://github.com/DiligentCoder-20022001" target = "_blank" style={{textDecoration:"none", color:"white"}}>View more !</a></button>
                         </div>
                     </div>
                     
