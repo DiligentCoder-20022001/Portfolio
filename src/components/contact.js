@@ -67,7 +67,7 @@ class Contact extends React.Component
                 <nav class="navbar navbar-light " style={{color:"#8884FF"}}>
                     <div class="container-fluid">
                         <a class="navbar-brand" href="#" style={{color:"#BAF2D8", fontSize:"1.5rem"}}>{"{DiligentCoder}"}</a>
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <button style={{background:"white"}} class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                         </button> 
                         <div class="collapse navbar-collapse" id="navbarNav" style={{textAlign:"center"}}>
@@ -99,7 +99,7 @@ class Contact extends React.Component
                         </div>
                         <div class = "col-lg-6 col-md-12" style={{textAlign:"center"}}>
                             <div style={styles2.slideInRight}>
-                            <h1 class = "title" style={{fontSize:"2rem"}}>Want to collaborate on projects??</h1>
+                            <h1 class = "title" style={{fontSize:"2rem"}}>Want to collaborate on projects or simply have a chat?</h1>
                             <h4>Here are some links to reach me out!</h4>
                             <button class = "button1"><a href = "https://github.com/DiligentCoder-20022001" target="_blank"><img src="https://img.icons8.com/fluent/48/000000/github.png"/></a></button>
                                 <button class = "button1"><a href = "https://siddharthschandran44.medium.com/" target="_blank"><img src="https://img.icons8.com/ios-filled/48/000000/medium-logo.png"/></a></button>
@@ -110,7 +110,7 @@ class Contact extends React.Component
   method="POST">
 
                         <div class="form-floating">
-                            <input type="email" name="_replyto" class="form-control" id="floatingInput" placeholder="name@example.com" />
+                            <input type="email" name="_replyto" class="form-control" placeholder="name@example.com" />
                             <label style={{color:"black"}} >Email address</label>
                         </div>
                         <div style={{paddingTop:"2%"}}></div>
@@ -124,11 +124,11 @@ class Contact extends React.Component
                 </main></div>
                         </div>
                     </div>
-                    <div style={{paddingTop:"5%"}}></div>
+                    <div style={{paddingTop:"7%"}}></div>
                        
                 </div>
-                <div style={{bottom:"0px",textAlign:"center", fontSize:"1.5rem", background:"black", height:"3rem", position:"relative", width:"100%"}}>
-        Created by Siddharth using <img src="https://img.icons8.com/color/48/000000/react-native.png"/>
+                <div style={{bottom:"0px",textAlign:"center", fontSize:"1rem", background:"black", height:"2rem", position:"relative", width:"100%"}}>
+        Created by Siddharth using <img src="https://img.icons8.com/color/25/000000/react-native.png"/>
       </div>
             </div></StyleRoot>
         }

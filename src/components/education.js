@@ -67,7 +67,7 @@ class Education extends React.Component
                 <nav class="navbar navbar-light " style={{color:"#8884FF"}}>
                     <div class="container-fluid">
                         <a class="navbar-brand" href="#" style={{color:"#BAF2D8", fontSize:"1.5rem"}}>{"{DiligentCoder}"}</a>
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <button style={{background:"white"}} class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                         </button> 
                         <div class="collapse navbar-collapse" id="navbarNav" style={{textAlign:"center"}}>
@@ -129,8 +129,8 @@ class Education extends React.Component
                     
                 </div>
                 
-                <div style={{bottom:"0px",textAlign:"center", fontSize:"1.5rem", background:"black", height:"3rem", position:"relative", width:"100%"}}>
-        Created by Siddharth using <img src="https://img.icons8.com/color/48/000000/react-native.png"/>
+                <div style={{bottom:"0px",textAlign:"center", fontSize:"1rem", background:"black", height:"2rem", position:"relative", width:"100%"}}>
+        Created by Siddharth using <img src="https://img.icons8.com/color/25/000000/react-native.png"/>
       </div>
             </div></StyleRoot>
         }
