@@ -58,36 +58,11 @@ class Education extends React.Component
         e.preventDefault();
         this.setState({status : "contact"});
     }
-    checkStatus()
+    render()
     {
-        if(this.state.status === "education")
-        {
-            return <StyleRoot><div>
+        return <StyleRoot><div>
                 <div class = "container">
-                <nav class="navbar navbar-light " style={{color:"#8884FF"}}>
-                    <div class="container-fluid">
-                        <a class="navbar-brand" href="#" style={{color:"#BAF2D8", fontSize:"1.5rem"}}>{"{DiligentCoder}"}</a>
-                        <button style={{background:"white"}} class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                        </button> 
-                        <div class="collapse navbar-collapse" id="navbarNav" style={{textAlign:"center"}}>
-                        <ul class="navbar-nav" >
-                            <li class="nav-item">
-                            <a class="nav-link active"  href="#" style={{color:"#BAF2D8", fontSize:"1rem"}} onClick = {(e)=>{this.home(e)}}>About</a>
-                            </li>
-                            <li class="nav-item">
-                            <a class="nav-link" href="#" style={{color:"#BAF2D8", fontSize:"1rem"}} onClick = {(e)=>{this.work(e)}}>Projects and Experience</a>
-                            </li>
-                            <li class="nav-item">
-                            <a class="nav-link" href="#" style={{color:"#BAF2D8", fontSize:"1rem"}} onClick = {(e)=>{this.education(e)}}>Academics</a>
-                            </li>
-                            <li class="nav-item">
-                            <a class="nav-link" href="#" style={{color:"#BAF2D8", fontSize:"1rem"}} onClick = {(e)=>{this.contact(e)}}>Contact</a>
-                            </li>
-                        </ul>
-                        </div>
-                    </div>
-                    </nav>
+                
                     <div style={{paddingTop:"5%"}}></div>
                     <div style={{textAlign:"center"}}>
                     <h1 class = "title1">Education</h1>
@@ -133,24 +108,6 @@ class Education extends React.Component
         Created by Siddharth using <img src="https://img.icons8.com/color/25/000000/react-native.png"/>
       </div>
             </div></StyleRoot>
-        }
-        if(this.state.status === "work")
-        {
-            return <Work/>
-
-        }
-        if(this.state.status === "home")
-        {
-            return <Home/>
-        }
-        if(this.state.status === "contact")
-        {
-            return <Contact/>
-        }
-    }
-    render()
-    {
-        return this.checkStatus();
     }
 }
 export default Education;

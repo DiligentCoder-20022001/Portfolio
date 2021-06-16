@@ -9,6 +9,7 @@ import { fadeIn } from 'react-animations';
 import { slideInRight } from 'react-animations';
 import Radium, {StyleRoot} from 'radium';
 import "animate.css/animate.min.css";
+import Nav from './nav';
 import ScrollAnimation from 'react-animate-on-scroll';
 const styles = {
   slideInLeft: {
@@ -56,34 +57,10 @@ class Work extends React.Component {
         e.preventDefault();
         this.setState({status : "contact"});
     }
-    checkStatus() {
-        if (this.state.status === "work") {
-            return <StyleRoot><div>
+    render() {
+        return <StyleRoot><div>
                 <div class="container">
-                <nav class="navbar navbar-light " style={{color:"#8884FF"}}>
-                    <div class="container-fluid">
-                        <a class="navbar-brand" href="#" style={{color:"#BAF2D8", fontSize:"1.5rem"}}>{"{DiligentCoder}"}</a>
-                        <button style={{background:"white"}} class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                        </button> 
-                        <div class="collapse navbar-collapse" id="navbarNav" style={{textAlign:"center"}}>
-                        <ul class="navbar-nav" >
-                            <li class="nav-item">
-                            <a class="nav-link active"  href="#" style={{color:"#BAF2D8", fontSize:"1rem"}} onClick = {(e)=>{this.home(e)}}>About</a>
-                            </li>
-                            <li class="nav-item">
-                            <a class="nav-link" href="#" style={{color:"#BAF2D8", fontSize:"1rem"}} onClick = {(e)=>{this.work(e)}}>Projects and Experience</a>
-                            </li>
-                            <li class="nav-item">
-                            <a class="nav-link" href="#" style={{color:"#BAF2D8", fontSize:"1rem"}} onClick = {(e)=>{this.education(e)}}>Academics</a>
-                            </li>
-                            <li class="nav-item">
-                            <a class="nav-link" href="#" style={{color:"#BAF2D8", fontSize:"1rem"}} onClick = {(e)=>{this.contact(e)}}>Contact</a>
-                            </li>
-                        </ul>
-                        </div>
-                    </div>
-                    </nav>
+          
                     <div style={{ paddingTop: "5%" }}></div>
                     <div style={{ textAlign: "center" }}>
                         <h1 class="title1">Experience</h1>
@@ -146,12 +123,12 @@ class Work extends React.Component {
                         <ScrollAnimation animateIn="fadeIn"><div>
                                 <div style={{ paddingTop: "2%" }}></div>
                                 <div class="card1 card-1">
-                                    <h3 style={{ color: "black" }}>GeekBuzz</h3>
-                                    <p style={{ color: "black" }}>A quiz app with admin and user side to help improve the quizzing community by increasing the competition level among the students</p>
+                                    <h3 style={{ color: "black" }}>AutoParker</h3>
+                                    <p style={{ color: "black" }}>A webapp to automate parking slot allocation with the help of HeapSort algorithm</p>
                                     <div style={{ color: "black" }}>
-                                        Made with Bootstrap, PHP and MySQL
+                                        Made with React.Js, Firebase, Chart.Js
                                         <div style={{paddingTop:"1%"}}>
-                                            <button class = "button2" style={{width:"100px", background:"black"}} onClick = {(e) => window.open("https://github.com/DiligentCoder-20022001/GeekBuzz")}>Github</button>{"  "}
+                                            <button class = "button2" style={{width:"100px", background:"black"}} onClick = {(e) => window.open("https://github.com/DiligentCoder-20022001/AutoParker")}>Github</button>{"  "} <button class = "button2" style={{width:"100px"}} onClick = {(e) => window.open("https://autoparker-b37c3.web.app/")}>Project</button>
                                             
                                         </div>
                                     </div>
@@ -165,7 +142,7 @@ class Work extends React.Component {
                                     <h3 style={{ color: "black" }}>Smart Shop</h3>
                                     <p style={{ color: "black" }}>An e-commerce application. Implemented in React.JS, firestore, charts.js and RazorPay API</p>
                                     <div style={{ color: "black" }}>
-                                        Made with React.JS
+                                        Made with React.JS, Firebase. Chart.Js
                                         <div style={{paddingTop:"1%"}}>
                                             <button class = "button2" style={{width:"100px", background:"black"}} onClick = {(e) => window.open("https://github.com/DiligentCoder-20022001/SmartShop")}>Github</button>{"  "}
                                             <button class = "button2" style={{width:"100px"}} onClick = {(e) => window.open("https://smartshop-f2b19.web.app/")}>Project</button>
@@ -188,23 +165,6 @@ class Work extends React.Component {
         Created by Siddharth using <img src="https://img.icons8.com/color/25/000000/react-native.png"/>
       </div>
             </StyleRoot>
-        }
-        if(this.state.status === "home")
-        {
-            return <Home/>
-
-        }
-        if(this.state.status === "education")
-        {
-            return <Education/>
-        }
-        if(this.state.status === "contact")
-        {
-            return <Contact/>
-        }
-    }
-    render() {
-        return this.checkStatus();
     }
 }
 export default Work;

@@ -60,43 +60,22 @@ class Home extends React.Component{
         e.preventDefault();
         this.setState({status : "contact"});
     }
-    checkStatus()
+    render()
     {
-        if(this.state.status === "home")
-        {
-            return <StyleRoot><div>
+        return <StyleRoot><div>
                 <div class = "container" style={{height:"100vh"}}>
-                <nav class="navbar navbar-light " style={{color:"#8884FF"}}>
-                    <div class="container-fluid">
-                        <a class="navbar-brand" href="#" style={{color:"#BAF2D8", fontSize:"1.5rem"}}>{"{DiligentCoder}"}</a>
-                        <button style={{background:"white"}} class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                        </button> 
-                        <div class="collapse navbar-collapse" id="navbarNav" style={{textAlign:"center"}}>
-                        <ul class="navbar-nav" >
-                            <li class="nav-item">
-                            <a class="nav-link active"  href="1" style={{color:"#BAF2D8", fontSize:"1rem"}} onClick = {(e)=>{this.home(e)}}>About</a>
-                            </li>
-                            <li class="nav-item">
-                            <a class="nav-link" href="2"  style={{color:"#BAF2D8", fontSize:"1rem"}} onClick = {(e)=>{this.work(e); }}>Projects and Experience</a>
-                            </li>
-                            <li class="nav-item">
-                            <a class="nav-link" href="#3" style={{color:"#BAF2D8", fontSize:"1rem"}} onClick = {(e)=>{this.education(e)}}>Academics</a>
-                            </li>
-                            <li class="nav-item">
-                            <a class="nav-link" href="#4" style={{color:"#BAF2D8", fontSize:"1rem"}} onClick = {(e)=>{this.contact(e)}}>Contact</a>
-                            </li>
-                        </ul>
-                        </div>
-                    </div>
-                    </nav>
+                
                     <ScrollAnimation animateIn="fadeInUp">
                     <div class = "row">
                         <div class = "col-lg-6 col-md-12">
                             <div style={{paddingTop:"25%", textAlign:"center"}}>
                                 <div>
                                 <h1 class = "title" >Siddharth.S.Chandran</h1>
-                                <h4>Everything looks IMPOSSIBLE unless done!</h4>
+                                <h4>Namaste 🙏</h4>
+                                <div class = "container" style = {{textAlign:"center"}}>
+                        <q style={{fontSize:"1.2rem"}}>Winners are not those who never fail, but those who never quit.</q>
+                        <p style = {{fontSize:"1rem"}}> - Dr.A.P.J.Abdul Kalam</p>
+                    </div>
                                 <button class = "button1"><a href = "https://github.com/DiligentCoder-20022001" target="_blank"><img src="https://img.icons8.com/fluent/48/000000/github.png"/></a></button>
                                 <button class = "button1"><a href = "https://siddharthschandran44.medium.com/" target="_blank"><img src="https://img.icons8.com/ios-filled/48/000000/medium-logo.png"/></a></button>
                                 <button class = "button1"><a href = "https://www.linkedin.com/in/siddharth-s-chandran-1b96311b9/" target="_blank"><img src="https://img.icons8.com/fluent/48/000000/linkedin.png"/></a></button>
@@ -111,13 +90,16 @@ class Home extends React.Component{
                         <div class = "col-lg-6 col-md-12" style={{textAlign:"center"}}>
                         <div><img src = {Hello} class = "img1"/></div>
                         </div>
-                    </div>
+                        
+                        </div>
+                    
+                    
                     </ScrollAnimation>
                 </div>
                 
                 <div class = "container">
                     <div style={{textAlign:"center"}}>
-                        <h1 class = "title1">I am intrested in ?</h1>
+                        <h1 class = "title1">I am interested in ?</h1>
                     </div>
                     <div style={{paddingTop:"5%"}}></div>
                     <div class = "row">
@@ -197,24 +179,6 @@ class Home extends React.Component{
       </div>
             </div>
             </StyleRoot>
-        }
-        if(this.state.status === "work")
-        {
-            return <Work/>
-
-        }
-        if(this.state.status === "education")
-        {
-            return <Education/>
-        }
-        if(this.state.status === "contact")
-        {
-            return <Contact/>
-        }
-    }
-    render()
-    {
-        return this.checkStatus();
     }
 }
 export default Home;
